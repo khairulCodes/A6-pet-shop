@@ -9,7 +9,6 @@ let allpets = []; // Define globally to be used in sorting
 
 document.getElementById('sortByPrice').addEventListener('click', () => {
    const sortedPets = allpets.sort((a, b) => b.price - a.price); 
-   console.log(sortedPets)
    displayCard(sortedPets); 
 });
 
@@ -121,7 +120,6 @@ const displayDetails = (modal) => {
 }
 
 const displayCard = (cards) => {
-    console.log(cards)
     const cardContainer = document.getElementById('cards')
     cardContainer.innerHTML = "";
 
